@@ -1,0 +1,6 @@
+streamlit== 1.23.1
+pandas== 2.0.2
+numPy== 1.22.4
+seaborn== 0.12.2
+scipy.cluster.hierarchy 
+matplotlib.pyplot
