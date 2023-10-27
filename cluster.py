@@ -4,8 +4,8 @@ import matplotlib as mpl
 import seaborn as sns
 import streamlit as st
 import scipy as sp
-#import scipy.cluster.hierarchy as sch
-print("matplotlib==", mpl.__version__)
+import yellowbrick as yb
+
 from matplotlib import pyplot as plt
 from scipy.cluster import hierarchy as sch
 from sklearn.preprocessing import MinMaxScaler
@@ -220,9 +220,4 @@ st.pyplot(plt)
 
 
 
-print("streamlit==", st.__version__)
-print("pandas==", pd.__version__)
-print("numPy==", np.__version__)
-print("sklearn==",sklearn.__version__)
-print("keras==",keras.__version__)
-print("tensorflow==", tf.__version__)
+
