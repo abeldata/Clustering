@@ -1,10 +1,13 @@
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+import matplotlib as mpl
 import seaborn as sns
 import streamlit as st
-import scipy.cluster.hierarchy as sch
-
+import scipy as sp
+#import scipy.cluster.hierarchy as sch
+print("matplotlib==", mpl.__version__)
+from matplotlib import pyplot as plt
+from scipy.cluster import hierarchy as sch
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
