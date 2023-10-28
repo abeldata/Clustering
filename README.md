@@ -1,6 +1,6 @@
 # Clustering
 
-Modelo de Kmeans y PCA 
+Modelo de Kmeans y PCA \n 
 Analisis y explicación del problema en el Notebook
 
 
