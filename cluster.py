@@ -6,8 +6,8 @@ import seaborn as sns
 import streamlit as st
 import scipy 
 import yellowbrick 
-#import kaleido
-#import plotly
+import kaleido
+import plotly
 
 
 from matplotlib import pyplot as plt
@@ -17,7 +17,7 @@ from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 from sklearn.decomposition import PCA
 from yellowbrick.cluster import SilhouetteVisualizer
-#from plotly import express as px
+from plotly import express as px
 
 
 
