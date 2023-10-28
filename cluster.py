@@ -146,6 +146,8 @@ df_paises['cluster'] = labels
 st.markdown("<h1 style='text-align: center; font-size: 14px;'>Paises agrupados</h1>", unsafe_allow_html=True)
 st.write(df_paises.set_index('pais'))
 
+
+
 columnas=  ['mort_inf','exportaciones','salud','importaciones','ingresos','inflacion','esp_vida','num_hijos','pib']
 centers = pd.DataFrame(C , columns=columnas)
 
@@ -155,11 +157,13 @@ for i, ax in enumerate(axes):
     maxPC = 1.01 * np.max(np.max(np.abs(center)))
     colors = ['C0' if l > 0 else 'C1' for l in center]
     ax.axhline(color='#888888')
+    ax.tick_params(axis='y', labelsize=8)
+    ax.tick_params(axis='x', labelsize=8)
     center.plot.bar(ax=ax, color=colors)
     ax.set_ylabel(f'Cluster {i + 1}')
     ax.set_ylim(-maxPC, maxPC)
 
-st.markdown("<h1 style='text-align: center; font-size: 14px;'>Interpretando los Clusters</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; font-size: 16px;'>Interpretando los Clusters</h1>", unsafe_allow_html=True)
 plt.tight_layout()
 plt.show()
 st.pyplot(plt)
@@ -174,7 +178,7 @@ df_pca = pd.DataFrame({'Componente Principal': range(1, pca_RF.n_components_ + 1
                        'Varianza Explicada': pca_RF.explained_variance_ratio_})
 
 # Crea el gráfico utilizando Matplotlib
-fig, ax = plt.subplots(figsize=(10, 6))
+fig, ax = plt.subplots(figsize=(9, 6))
 ax.bar(df_pca['Componente Principal'], df_pca['Varianza Explicada'])
 ax.set_xlabel('Componente Principal')
 ax.set_ylabel('Varianza Explicada')
