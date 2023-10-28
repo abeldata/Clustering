@@ -2,7 +2,7 @@
 
 Modelo de Kmeans y PCA 
 <br />
-Analisis y explicación del problema en el Notebook
+Análisis y explicación del problema en el Notebook
 
 
 ## Demo App
