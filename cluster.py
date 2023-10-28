@@ -288,6 +288,6 @@ elif means == 4 :
 
 fig.update_geos(fitbounds="locations", visible=True)
 fig.update_layout(legend_title_text='Etiquetas', legend_title_side='top', title_pad_l=260, title_y=0.86)
-fig.update_layout(width=900, height=506)
+fig.update_layout(width=800, height=450)
 
 st.plotly_chart(fig)
