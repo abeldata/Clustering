@@ -1,3 +1,4 @@
+
 import pandas as pd
 import numpy as np
 import matplotlib as mpl
@@ -5,6 +6,9 @@ import seaborn as sns
 import streamlit as st
 import scipy 
 import yellowbrick 
+import kaleido
+import plotly
+
 
 from matplotlib import pyplot as plt
 from scipy.cluster import hierarchy as sch
@@ -13,6 +17,7 @@ from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 from sklearn.decomposition import PCA
 from yellowbrick.cluster import SilhouetteVisualizer
+from plotly import express as px
 
 
 
@@ -221,7 +226,68 @@ plt.show()
 st.pyplot(plt)
 
 
+# mapa mundial con la rpresentación de los paises
+
+
+
+if means == 3:
+    df_paises.loc[df_paises['cluster'] == 0, 'cluster'] = 'Grupo objeto'
+    df_paises.loc[df_paises['cluster'] == 1, 'cluster'] = 'Cluster 1'
+    df_paises.loc[df_paises['cluster'] == 2, 'cluster'] = 'Cluster 2'
+
+    fig = px.choropleth(df_paises[['pais', 'cluster']],
+                        locationmode='country names',
+                        locations='pais',
+                        title='Distribución geográfica',
+                        color='cluster',
+                        color_discrete_map={
+                            'Grupo objeto': '#E74C3C',
+                            'Cluster 1': '#48C9B0',
+                            'Cluster 2': '#E67E22'
+                        }
+                        )
+    
+elif means == 2 :
+    df_paises.loc[df_paises['cluster'] == 1, 'cluster'] = 'Grupo objeto'
+    df_paises.loc[df_paises['cluster'] == 0, 'cluster'] = 'Cluster 1'
+
+    fig = px.choropleth(df_paises[['pais', 'cluster']],
+                        locationmode='country names',
+                        locations='pais',
+                        title='Distribución geográfica',
+                        color='cluster',
+                        color_discrete_map={
+                            'Grupo objeto': '#E74C3C',
+                            'Cluster 1': '#48C9B0'
+                            
+                        }
+                        )
+    
+
+elif means == 4 :
+    df_paises.loc[df_paises['cluster'] == 1, 'cluster'] = 'Grupo objeto'
+    df_paises.loc[df_paises['cluster'] == 2, 'cluster'] = 'Cluster 1'
+    df_paises.loc[df_paises['cluster'] == 3, 'cluster'] = 'Cluster 2'
+    df_paises.loc[df_paises['cluster'] == 0, 'cluster'] = 'Cluster 3'
+    fig = px.choropleth(df_paises[['pais', 'cluster']],
+                        locationmode='country names',
+                        locations='pais',
+                        title='Distribución geográfica',
+                        color='cluster',
+                        color_discrete_map={
+                            'Grupo objeto': '#E74C3C',
+                            'Cluster 1': '#48C9B0',
+                            'Cluster 2': '#E67E22',
+                            'Cluster 3': '#154360'
+                        }
+                        )
 
 
 
 
+
+fig.update_geos(fitbounds="locations", visible=True)
+fig.update_layout(legend_title_text='Etiquetas', legend_title_side='top', title_pad_l=260, title_y=0.86)
+fig.update_layout(width=900, height=506)
+
+st.plotly_chart(fig)
