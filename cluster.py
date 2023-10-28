@@ -130,7 +130,7 @@ elif clusters =='Dendograma':
     st.pyplot(plt)
 
 
-    # Crear modelo K-means con 3 clusters
+    # Crear modelo K-means con means clusters
 kmeans = KMeans(n_clusters=means, random_state=42)
 
 # Entrenar modelo con datos del dataset
@@ -149,7 +149,7 @@ st.write(df_paises.set_index('pais'))
 columnas=  ['mort_inf','exportaciones','salud','importaciones','ingresos','inflacion','esp_vida','num_hijos','pib']
 centers = pd.DataFrame(C , columns=columnas)
 
-f, axes = plt.subplots(means, 1, figsize=(5, 6), sharex=True)
+f, axes = plt.subplots(means, 1, figsize=(5, 5), sharex=True)
 for i, ax in enumerate(axes):
     center = centers.loc[i, :]
     maxPC = 1.01 * np.max(np.max(np.abs(center)))
