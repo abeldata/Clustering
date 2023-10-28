@@ -3,8 +3,8 @@ import numpy as np
 import matplotlib as mpl
 import seaborn as sns
 import streamlit as st
-import scipy as sp
-import yellowbrick as yb
+import scipy 
+import yellowbrick 
 
 from matplotlib import pyplot as plt
 from scipy.cluster import hierarchy as sch
@@ -39,7 +39,7 @@ correlaciones = st.sidebar.selectbox ('Tipos' , ('pearson','spearman','kendall')
 
 st.sidebar.header('Número de Clusters')
 
-clusters = st.sidebar.selectbox ('K' , ('Métodos', 'SilhouetteVisualizer','Dendograma' ))
+clusters = st.sidebar.selectbox ('Métodos' , ('Método_codo', 'SilhouetteVisualizer','Dendograma' ))
 
 st.sidebar.header('Entrenando Kmeans')
 
