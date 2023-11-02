@@ -1,8 +1,6 @@
 # Análisis de Clustering y Componentes Principales
-Este repositorio contiene una App en Streamlit que realiza dinámicamente un análisis de clustering de diferntes países a partir de variables poblacionales.<br />
-El código utiliza técnicas de análisis del K óptimo  en el algoritmo Kmeans .<br />
-También propone la reducción interactiva de dimensionalidad del modelo , PCA , así como graficas en función de sus dos componentes principales . <br />
-Estadistica descriptiva de los datos y su interpretación así como objetivo del análisis y sus conclusiones en el notebook .
+Este repositorio se centra en la creación App interactiva en Streamlit , como soporte en la visualización dinámica de los datos analizados en el notebook .<br />
+Proponiendo diferentes metodos para calcular el K óptimo , uso de Kmeans así como de técnicas de PCA
 
 ## Demo App
 
