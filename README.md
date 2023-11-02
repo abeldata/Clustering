@@ -21,9 +21,10 @@ yellowbrick== 1.5
 plotly== 5.18.0
 kaleido== 0.2.1
 ```
-## Estructura del Repositorio
+## Estructura del Repositorio UD3.ipynb
 ```bash
 .
+├── UD3.ipynb                  # Notebook del ejercicio
 ├── paises.csv                 # Archivo de datos poblacionales
 ├── datos_desbalanceados.py    # Código principal
 ├── requirements.txt           # Lista de librerías requeridas
