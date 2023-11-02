@@ -4,7 +4,6 @@ El código utiliza técnicas de análisis como el Método del Codo, la visualiza
 También propone la reducción interactiva de dimensionalidad del modelo , PCA , así como graficas en función de sus dos componentes principales . <br />
 Estadistica descriptiva de los datos y su interpretación así como objetivo del análisis y sus conclusiones en el notebook .
 
-
 ## Demo App
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://abeldata-clustering.streamlit.app/)
@@ -24,17 +23,17 @@ yellowbrick== 1.5
 plotly== 5.18.0
 kaleido== 0.2.1
 ```
-
 ## Estructura del Repositorio
 ```bash
 .
 ├── paises.csv                 # Archivo de datos poblacionales
 ├── datos_desbalanceados.py    # Código principal
+├── requirements.txt           # Lista de librerías requeridas
 └── README.md                  # Documentación del proyecto
 ```
 ## Uso
 Elige los parámetros desde el panel lateral e interactua con ellos para evaluar los diferentes resultados del modelo .
 
 ## Créditos
-Este proyecto utiliza las librerías de Python, incluyendo Streamlit, Pandas, NumPy, Matplotlib, Seaborn y Scikit-learn. Agradecimientos a la comunidad de desarrolladores de estas librerías.
+Este proyecto utiliza las librerías de Python, incluyendo Streamlit, Pandas, NumPy, Matplotlib, Seaborn y Scikit-learn. <br /> Agradecimientos a la comunidad de desarrolladores de estas librerías.
 
