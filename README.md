@@ -28,9 +28,9 @@ kaleido== 0.2.1
 ## Estructura del Repositorio
 ```bash
 .
-├── paises.csv             # Archivo de datos poblacionales
+├── paises.csv                 # Archivo de datos poblacionales
 ├── datos_desbalanceados.py    # Código principal
-└── README.md             # Documentación del proyecto
+└── README.md                  # Documentación del proyecto
 ```
 ## Uso
 Elige los parámetros desde el panel lateral e interactua con ellos para evaluar los diferentes resultados del modelo .
