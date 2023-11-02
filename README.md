@@ -9,6 +9,9 @@ Estadistica descriptiva de los datos y su interpretación así como objetivo del
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://abeldata-clustering.streamlit.app/)
 
+## Uso
+El código ofrece una interfaz a través de Streamlit que te permitirá explorar y analizar clusters a partir de un conjunto de datos poblacionales. <br /> Elige las variables, los métodos de clustering , la reducción PCA  y observa los resultados a través de visualizaciones interactivas.
+
 ## Requisitos
 Las librerías necesarias para ejecutar este proyecto son:
 
