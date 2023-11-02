@@ -9,9 +9,6 @@ Estadistica descriptiva de los datos y su interpretación así como objetivo del
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://abeldata-clustering.streamlit.app/)
 
-## Uso
-El código ofrece una interfaz a través de Streamlit que te permitirá explorar y analizar clusters a partir de un conjunto de datos poblacionales. <br /> Elige las variables, los métodos de clustering , la reducción PCA  y observa los resultados a través de visualizaciones interactivas.
-
 ## Requisitos
 Las librerías necesarias para ejecutar este proyecto son:
 
@@ -27,3 +24,17 @@ yellowbrick== 1.5
 plotly== 5.18.0
 kaleido== 0.2.1
 ```
+
+## Estructura del Repositorio
+```bash
+.
+├── paises.csv             # Archivo de datos poblacionales
+├── datos_desbalanceados.py    # Código principal
+└── README.md             # Documentación del proyecto
+```
+## Uso
+Elige los parámetros desde el panel lateral e interactua con ellos para evaluar los diferentes resultados del modelo .
+
+## Créditos
+Este proyecto utiliza las librerías de Python, incluyendo Streamlit, Pandas, NumPy, Matplotlib, Seaborn y Scikit-learn. Agradecimientos a la comunidad de desarrolladores de estas librerías.
+
