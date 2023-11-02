@@ -1,6 +1,6 @@
 # Análisis de Clustering y Componentes Principales
-Este repositorio se centra en la creación App interactiva en Streamlit , como soporte en la visualización dinámica de los datos analizados en el notebook .<br />
-Proponiendo diferentes metodos para calcular el K óptimo , uso de Kmeans así como de técnicas de PCA
+Este repositorio se centra en la creación de una App interactiva en Streamlit , como soporte en la visualización dinámica de los datos analizados en el notebook  UD3.ipynb .<br />
+Propone diferentes metodos para el calculo del K óptimo , uso de Kmeans así como de técnicas de PCA
 
 ## Demo App
 
