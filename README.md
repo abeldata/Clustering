@@ -1,9 +1,6 @@
-# Clustering
-
-Modelo de Kmeans y PCA 
-<br />
-Análisis y explicación del problema en el Notebook
-
+# Análisis de Clustering y Componentes Principales
+Este repositorio contiene una App en Streamlit que realiza dinamicamente un análisis de clustering de diferntes países a partir de variables poblacionales.<br />
+El código utiliza técnicas de análisis como el Método del Codo, la visualización de Silhouette Scores y el método de Dendograma.
 
 ## Demo App
 
