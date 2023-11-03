@@ -34,5 +34,5 @@ kaleido== 0.2.1
 Elige los parámetros desde el panel lateral e interactua con ellos para evaluar los diferentes resultados del modelo .
 
 ## Créditos
-Este proyecto utiliza las librerías de Python, incluyendo Streamlit, Pandas, NumPy, Matplotlib, Seaborn y Scikit-learn. <br /> Agradecimientos a la comunidad de desarrolladores de estas librerías.
+Este proyecto utiliza las librerías de Python, incluyendo Streamlit, Pandas, NumPy, Matplotlib, Seaborn y Scikit-learn.<br /> Agradecimientos a la comunidad de desarrolladores de estas librerías.
 
